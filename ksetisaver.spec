@@ -13,7 +13,7 @@ BuildRequires:	automake
 BuildRequires:	kdelibs-devel >= 3.0.3
 Requires:	kdebase-screensavers
 Requires:	setiathome
-Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define         _htmldir        /usr/share/doc/kde/HTML
 
