@@ -2,14 +2,14 @@ Summary:	SETI@home screensaver for KDE
 Summary(pl):	Wygaszacz ekranu SETI@home dla KDE
 Name:		ksetisaver
 Version:	0.2.7
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.frozenlight.de/content/ksetisaver/%{name}-%{version}.tar.gz
 URL:		http://www.frozenlight.de/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	kdelibs-devel >= 3.0
+BuildRequires:	kdelibs-devel >= 3.0.3
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
