@@ -1,7 +1,7 @@
 Summary:	SETI@home screensaver for KDE
 Summary(pl):	Wygaszacz ekranu SETI@home dla KDE
 Name:		ksetisaver
-Version:	0.3.2
+Version:	0.3.3
 Release:	1
 License:	GPL
 Group:		X11/Applications
