@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.frozenlight.de/content/ksetisaver/%{name}-%{version}.tar.gz
+# Source0-md5:	4b3c69865c2d6c28341df42b28e9f552
 URL:		http://www.frozenlight.de/
 BuildRequires:	autoconf
 BuildRequires:	automake
