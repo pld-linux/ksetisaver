@@ -10,6 +10,8 @@ URL:		http://www.frozenlight.de/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	kdelibs-devel >= 3.0.3
+Requires:	kdebase-screensavers
+Requires:       setiathome
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define         _htmldir        /usr/share/doc/kde/HTML
@@ -26,6 +28,7 @@ Wygaszacz ekranu SETI@home dla KDE.
 %build
 kde_htmldir="%{_htmldir}"; export kde_htmldir
 kde_icondir="%{_pixmapsdir}"; export kde_icondir
+kde_appsdir="%{_applnkdir}"; export kde_appsdir
 
 CXXFLAGS="%{rpmcflags} -fno-rtti -fno-exceptions"
 %configure2_13
@@ -38,6 +41,9 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT%{_datadir}/apps/kscreensaver
+mv $RPM_BUILD_ROOT%{_applnkdir}/System/ScreenSavers/* $RPM_BUILD_ROOT/%{_datadir}/apps/kscreensaver
+
 %find_lang ksetisaver --with-kde
 
 %clean
@@ -47,5 +53,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README TODO
 %attr(755,root,root) %{_bindir}/*
-%{_applnkdir}/System/ScreenSavers/*
 %{_datadir}/apps/*
