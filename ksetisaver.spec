@@ -43,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_datadir}/apps/kscreensaver
-mv $RPM_BUILD_ROOT%{_applnkdir}/System/ScreenSavers/* $RPM_BUILD_ROOT/%{_datadir}/apps/kscreensaver
+mv $RPM_BUILD_ROOT%{_applnkdir}/System/ScreenSavers/* $RPM_BUILD_ROOT%{_datadir}/apps/kscreensaver
 
 %find_lang ksetisaver --with-kde
 
