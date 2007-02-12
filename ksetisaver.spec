@@ -1,5 +1,5 @@
 Summary:	SETI@home screensaver for KDE
-Summary(pl):	Wygaszacz ekranu SETI@home dla KDE
+Summary(pl.UTF-8):   Wygaszacz ekranu SETI@home dla KDE
 Name:		ksetisaver
 Version:	0.3.4
 Release:	3
@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 SETI@home screensaver for KDE.
 
-%description -l pl
+%description -l pl.UTF-8
 Wygaszacz ekranu SETI@home dla KDE.
 
 %prep
